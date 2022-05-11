@@ -1,0 +1,54 @@
+.logo-click {
+  color: black;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: calc(50% - 50px);
+  border-radius: 90px;
+  border-color: white;
+  border-style: solid;
+  opacity: 0.3;
+  transition: 1s;
+  animation: logo-click-animation;
+  animation-duration: 1s;
+}
+
+@keyframes logo-click-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.3;
+  }
+}
+
+.logo-click:hover {
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  transition: 1s;
+}
+
+.canvas {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.logo-animation {
+  top: 20px;
+  animation-name: logo-animation;
+  animation-duration: 1s;
+}
+
+@keyframes logo-animation {
+  from {
+    top: calc(50% - 50px);
+    opacity: 0.6;
+  }
+
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}

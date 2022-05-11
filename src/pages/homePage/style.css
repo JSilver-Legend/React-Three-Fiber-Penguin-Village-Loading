@@ -1,0 +1,14 @@
+.logo {
+  top: 20px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.canvas-back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
