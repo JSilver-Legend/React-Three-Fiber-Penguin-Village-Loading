@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei';
 
 const LoadingModel = ({ onInitialized }) => {
 
-  const { nodes, materials, animations } = useGLTF('glb/test_3.glb');
+  const { nodes, materials, animations } = useGLTF('glb/test_2.glb');
   console.log('nodes-->', nodes, animations, materials);
   const group = useRef();
   const { actions } = useAnimations(animations, group);
