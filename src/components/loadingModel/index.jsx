@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei';
 
 const LoadingModel = ({ onInitialized }) => {
 
-  const { nodes, materials, animations } = useGLTF('glb/test_2.glb');
+  const { nodes, materials, animations } = useGLTF('glb/test_3.glb');
   console.log('nodes-->', nodes, animations, materials);
   const group = useRef();
   const { actions } = useAnimations(animations, group);
@@ -27,6 +27,41 @@ const LoadingModel = ({ onInitialized }) => {
         <mesh
           name="model_1"
           geometry={nodes.model_1.geometry}
+          material={materials.Material_001}
+        />
+        <mesh
+          name="model_2"
+          geometry={nodes.model_2.geometry}
+          material={materials.Material_001}
+        />
+        <mesh
+          name="model_3"
+          geometry={nodes.model_3.geometry}
+          material={materials.Material_001}
+        />
+        <mesh
+          name="model_4"
+          geometry={nodes.model_4.geometry}
+          material={materials.Material_001}
+        />
+        <mesh
+          name="model_5"
+          geometry={nodes.model_5.geometry}
+          material={materials.Material_001}
+        />
+        <mesh
+          name="model_6"
+          geometry={nodes.model_6.geometry}
+          material={materials.Material_001}
+        />
+        <mesh
+          name="model_7"
+          geometry={nodes.model_7.geometry}
+          material={materials.Material_001}
+        />
+        <mesh
+          name="model_8"
+          geometry={nodes.model_8.geometry}
           material={materials.Material_001}
         />
         <mesh scale={[50, 50, 1]} position={[0, -0.03, 0]} rotation={[-Math.PI / 2, 0, 0]}>
